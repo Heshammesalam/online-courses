@@ -1,0 +1,10 @@
+{% macro priceBox(data={}) %}
+<div class="card mb-3">
+  <img src="{{data.image}}" class="card-img-top" alt="...">
+  <img src="{{data.icon}}" class="icon" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{data.title}}</h5>
+    <p class="card-text"><small class="text-muted">{{data.subTitle}}</small></p>
+  </div>
+</div>
+{% endmacro %}

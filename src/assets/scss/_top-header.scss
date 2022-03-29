@@ -1,0 +1,40 @@
+.nav-top{
+    @include display_flex ();
+    @include flex_align_items (center);
+    @include flex_justify_content (space-between);
+     padding: 10px 0;
+
+     @include md{
+         flex-direction: column;
+         
+     }
+     @include sm{
+        text-align: left;
+        
+    }
+     .nav-left{
+         i{
+             color: $black;
+             margin-right: 10px;
+             
+         }
+     }
+     .nav-right{
+
+
+        i{
+            color: $black;
+            margin-left: 20px;
+
+        }
+    }
+    span{
+        color:$textColor;
+        font-size: 13px;
+        margin-right: 25px;
+    //     @include sm{
+    //         font-size: 8px;
+        
+    // }
+}
+}

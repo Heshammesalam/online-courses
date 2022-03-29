@@ -1,0 +1,133 @@
+@mixin cfx {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin trans($trans: .2s) {
+    -webkit-transition: all $trans ease-in-out;
+    -moz-transition: all $trans ease-in-out;
+    transition: all $trans ease-in-out;
+}
+
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1) {
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: ($lineHeight * $lineCount) + em;
+    min-height: ($lineHeight * $lineCount) + em;
+    padding-right: 1em;
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > img {
+        position: absolute;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: initial;
+    }
+}
+
+@mixin display_flex {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+}
+
+@mixin flex($flex_value) {
+    flex: $flex_value;
+    flex: -webkit- $flex_value;
+    -webkit-flex: $flex_value;
+    -moz-flex: $flex_value;
+    -ms-flex: $flex_value;
+}
+
+// vertical alignment
+@mixin flex_align_items($flex_align_value) {
+    align-items: $flex_align_value;
+    align-items: $flex_align_value;
+    -webkit-align-items: $flex_align_value;
+    -moz-align-items: $flex_align_value;
+    -ms-align-items: $flex_align_value;
+}
+
+// hotizon alignment
+@mixin flex_justify_content($flex_justify_value) {
+    justify-content: $flex_justify_value;
+    justify-content: $flex_justify_value;
+    -webkit-justify-content: $flex_justify_value;
+    -moz-justify-content: $flex_justify_value;
+    -ms-justify-content: $flex_justify_value;
+}
+
+@mixin mqx($canvas) {
+    @if $canvas == m { @media (max-width: $mobile) { @content; } }
+    @else if $canvas == t { @media (max-width: $tablet) { @content;} }
+    @else if $canvas == l { @media (max-width: $laptop) { @content; } }
+    @else if $canvas == d { @media (max-width: $desktop) { @content; } }
+}
+@mixin mqn($canvas) {
+    @if $canvas == m { @media (min-width: $mobile) { @content; } }
+    @else if $canvas == t { @media (min-width: $tablet) { @content;} }
+    @else if $canvas == l { @media (min-width: $laptop) { @content; } }
+    @else if $canvas == d { @media (min-width: $desktop) { @content; } }
+}
+
+@mixin hoverFoucs{
+    @include trans(.2s);
+
+    &:hover,
+    &:focus{
+        @content;
+    }
+};
+
+// media Queries
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-max}) {
+      @content;
+    }
+  }
+
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+      @content;
+    }
+  }
+  
+  // MEDIUM DEVICES
+  @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+      @content;
+    }
+  }
+  
+  // LARGE DEVICES
+  @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+      @content;
+    }
+  }
+  
+  // EXTRA LARGE DEVICES
+  @mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+      @content;
+    }
+  }

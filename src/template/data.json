@@ -1,0 +1,172 @@
+{
+  "maps": [
+    {
+      "image": "./assets/images/map/map-1.png",
+      "count": "678",
+      "subTitle": "COURSES PUBLISHED"
+    },
+
+    {
+      "image": "./assets/images/map/map-2.png",
+      "count": "120",
+      "subTitle": "EXPERT INSTRUCTORS"
+    },
+
+    {
+      "image": "./assets/images/map/map-3.png",
+      "count": "8,300",
+      "subTitle": "HAPPY LEARNERS"
+    },
+
+    {
+      "image": "./assets/images/map/map-4.png",
+      "count": "32",
+      "subTitle": "AWARDS ACHIEVED"
+    }
+
+     ],
+
+  "navItems": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "index.html"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "path": "about.html"
+    },
+    {
+      "id": "Courses",
+      "label": "Courses",
+      "path": "about.html"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "path": "contact.html"
+    }
+  ],
+
+  "itemsFooter": [
+    {
+      "class": "fa fa-map-marker",
+      "text": "1500 Treat Ave, Suite 200 San Francisco, CA 94110"
+    },
+
+    {
+      
+      "class": "fa fa-envelope",
+      "text": "vctung@outlook.com"
+    },
+
+    {
+      
+      "class": "fa fa-phone",
+      "text": "1-800-800-2299 (Support)"
+    }
+   
+  ],
+  "firstItemns":[
+    {
+      "title":"Community",
+      "link":"Learners"
+    },
+    {
+      
+      "link":"Partners"
+    },
+    {
+      
+      "link":"Developers"
+    },
+    {
+      
+      "link":"Beta Testers"
+    },
+    {
+      
+      "link":"Translators"
+    },
+    {
+      
+      "link":"Blog"
+    },
+    {
+      
+      "link":"Tech Blog"
+    },
+    {
+      
+      "link":"Teaching Center"
+    }
+  ],
+  "secondItemns":[
+    {
+      "title":"Informations",
+      "link":"About"
+    },
+    {
+      
+      "link":"Pricing"
+    },
+    {
+      
+      "link":"Blog"
+    },
+    {
+      
+      "link":"Careers"
+    },
+    {
+      
+      "link":"Contact"
+    }
+   
+  ],
+  "thirdItemns":[
+    {
+      "title":"More",
+      "link":"Press"
+    },
+    {
+      
+      "link":"Investors"
+    },
+    {
+      
+      "link":"Terms"
+    },
+    {
+      
+      "link":"Privacy"
+    },
+    {
+      
+      "link":"Help"
+    },
+    {
+      
+      "link":"Accessibility"
+    },
+    {
+      
+      "link":"Contact"
+    },
+    {
+      
+      "link":"Articles"
+    },
+    {
+      
+      "link":"Directory"
+    },
+    {
+      
+      "link":"Affiliates"
+    }
+   
+  ]
+}
+

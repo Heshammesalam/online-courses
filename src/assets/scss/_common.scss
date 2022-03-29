@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
+
+html {
+    font-family: $primaryFont;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.42857143 $primaryFont;
+    background:#fff;
+    
+    font-family: 'Playfair Display', serif;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea{
+    resize: none;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    @include trans(.2s);
+    outline: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: darken($primaryColor, 10%);
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    text-align: left;
+    font: 16px/1.4 $primaryFont;
+    color: $textColor;
+}
+.btn {
+    padding: 10px 40px;
+    text-align: center;
+    display: block;
+    background: $primaryColor;
+    color: #fff;
+    border-radius: 50px;
+    font: 13px/1.2 $primaryFont;
+    @include trans(.2s);
+    outline: 0;
+    border: 0;
+
+    &:hover, &:focus {
+        background: none;
+        outline: 0;
+        color: #fff;
+        background: darken($primaryColor, 10%);
+    }
+    @media (max-width: $laptop) {
+        padding: 10px 20px;
+    }
+}
+
+.main-title {
+    font: 39px/1 $primaryFont;
+    font-weight: 800;
+    color: $primaryColor;
+
+    @media (max-width: $tablet) {
+        font-size: 25px;
+    }
+
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font: 14px/1 $primaryFont;
+    outline: 0;
+}
+
+select.input-field {
+    padding: 5px 20px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.vcenter {
+    @include flex_align_items(center);
+    @include flex_justify_content(flex-start);
+    @include display_flex();
+
+    @media (max-width: $laptop) {
+        display: block;
+    }
+}
+
+label {
+    color: $textColor;
+    font: 17px/45px $primaryFont;
+    margin-bottom: 0;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 13px 25px;
+    border-radius: 25px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    font: 14px/1 $primaryFont;
+    outline: 0;
+    height: calc(1.5em + .75rem + 17px);
+}
+
+input[type="submit"] {
+    background: $primaryColor;
+    width: 205px;
+    height: auto !important;
+    margin: 0 auto;
+    color: #fff;
+    @include trans(.2s);
+
+    &:hover {
+        background: darken($primaryColor, 10%);
+    }
+}
+
+.parsley-required, .parsley-equalto {
+    color: #a94442;
+    padding: 10px;
+    font: 13px/1 $primaryFont;
+}
+.form-control:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.cover-img{
+    .vcenter{
+        height: 245px;
+    }
+    .cover-content{
+        h2{
+            margin: 0;
+            color: #fff;
+        }
+    }
+}
+.select-custom{
+    background: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    margin-bottom: 1rem;
+
+    &:after{
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        font-size: 14px;
+        font-weight: 600;
+        position: absolute;
+        z-index: 2;
+        top: 14px;
+        right: 15px;
+        pointer-events: none;
+    }
+    select{
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        padding: 10px 15px;
+        width: 100%;
+        height: calc(1.5em + .75rem + 10px);
+        font-weight: 500;
+
+        option[value=""][disabled] {
+            display: none;
+        }
+
+        &:focus{
+            outline: 1px solid $primaryColor;
+            border-radius: 0;
+        }
+    }
+}
+.cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img src="assets/images/navbar/brand.svg" /> <span class="ml-2">For
+                education</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                {% for item in navItems %}
+                <li class="nav-item {% if activePageId == item.id %}active{% endif %}">
+                    <a class="nav-item nav-link" href="{{ item.path }}">{{ item.label }}</a>
+                </li>
+                {% endfor %}
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn-sign my-2 my-sm-0 mr-3 ml-md-4  pt-2 pb-2 pr-4 pl-4" type="submit">Sign up</button>
+                <button class="btn-search pt-2 pb-2 pr-3 pl-3" type="submit"><i class="fa fa-search fa-1x"
+                        aria-hidden="true"></i></button>
+
+            </form>
+        </div>
+    </nav>
+
+</div>

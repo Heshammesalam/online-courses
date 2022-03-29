@@ -1,0 +1,57 @@
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $secondaryColor;
+  padding-top: 50px;
+  .left-links{
+    .logo {
+        margin-bottom: 25px;
+      }
+      .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+    
+      li {
+        margin-bottom: 20px;
+    
+        &:first-of-type {
+          margin-top: 30px;
+          span {
+            margin-top: 25px;
+          }
+        }
+    
+        a {
+          color: #fff;
+          font-size: 22px;
+          &:hover{
+             color:$primaryColor;
+          }
+    
+          i {
+            margin-right: 15px;
+          }
+        }
+      }
+  }
+  .total-nav{
+      h5{
+          color:#FFF;
+          font-weight:bold;
+      }
+      a{
+          color:#FFF;
+          margin-bottom:20px;
+      }
+  }
+  .Copyright{
+      background-color:$primaryColor;
+      color:#000;
+    
+      i{
+          color:#000;
+          margin-left:15px;
+      }
+  }
+}

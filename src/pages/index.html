@@ -1,0 +1,262 @@
+{% extends "layout.html" %} {% set activePageId = "home" %} {% set title = '
+Education Courses' %} {% block content %}
+<div class="master">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="master-left">
+                    <div>
+                        <h5>Become Master</h5>
+                        <p>Learn New Skills Online Find Best Courses</p>
+                        <button class="btn-get">Get A Quote</button>
+                        <button class="btn-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="../../assets/images/main-head/Analytic.svg" alt="" srcset="" />
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="upcoming">
+                    <div class="left-up">
+                        <img src="../assets/images/main-head/Success.svg" alt="" srcset="" />
+                        <p class="ml-2">
+                            Upcoming Our <span>Basic in Python</span> Course!
+                        </p>
+                    </div>
+                    <div class="right-up">
+                        <div>
+                            <span class="text-bold">11</span><span class="ml-3">:</span><br />
+                            <span class="text-md">Day</span>
+                        </div>
+                        <div>
+                            <span class="text-bold">02</span><span class="ml-3">:</span><br />
+                            <span class="text-md">hours</span>
+                        </div>
+                        <div>
+                            <span class="text-bold">45</span><span class="ml-3">:</span><br />
+                            <span class="text-md">minutes</span>
+                        </div>
+                        <div>
+                            <span class="text-bold">21</span><br />
+                            <span class="text-md">second</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% from '../template/component/card.html' import priceBox %}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="mb-5">Top Featured Courses</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-1.png",icon:"assets/images/features/icon-1.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-2.png",icon:"assets/images/features/icon-2.png",
+          title: "Buddhism and Modern Psychology", subTitle: "The Museum of
+          Modern Art"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-3.png",icon:"assets/images/features/icon-3.png",
+          title: "Introduction to Philosophy", subTitle: "Duke University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-4.png",icon:"assets/images/features/icon-1.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-5.png",icon:"assets/images/features/icon-2.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-6.png",icon:"assets/images/features/icon-3.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-7.png",icon:"assets/images/features/icon-1.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-8.png",icon:"assets/images/features/icon-2.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="features-courses">
+                <div class="card-deck mb-3">
+                    {{ priceBox({image:
+          "assets/images/features/back-9.png",icon:"assets/images/features/icon-3.png",
+          title: "User Research for User Experience Design", subTitle: "Duke
+          University"}) }}
+                </div>
+                <!--- Second Method with looping From Json --->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="Successful mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="Successful-left mb-5">
+                    <div class="back">
+                        <img src="../assets/images/successful/img.png" alt="" srcset="" />
+                    </div>
+                    <div class="icon-2">
+                        <img src="../assets/images/successful/Group 56.png" alt="" srcset="" />
+                    </div>
+                    <div class="box-text text-center p-2">
+                        <h5>Kimmie Vo</h5>
+                        <p class="text-center"><small>Junior Designer</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="Successful-right">
+                    <div class="top">
+                        <h2 class="colored-2">
+                            Successful Student <br /><span class="colored">Feedback</span>
+                        </h2>
+                        <p class="text-black-50">
+                            Take courses from the world’s best instructors and universities.
+                            Courses include recorded auto-graded and peer-reviewed
+                            assignments, video lectures, and community discussion forums. When
+                            you complete a course, you’ll be eligible to receive a shareable
+                            electronic Course Certificate for a small fee.
+                        </p>
+                    </div>
+                    <div class="bottom mt-5">
+                        <h5 class="text-lg">The courses that Kimmie has taken</h5>
+                        <div class="box-cont mt-4">
+                            <div class="img-left">
+                                <img src="../assets/images/successful/UX_design_principles_jpg_-EtzLc2m.png" alt=""
+                                    srcset="" />
+                            </div>
+                            <div class="cont-right p-3">
+                                <h5>Modern and Contemporary Art and Design</h5>
+                                <p>
+                                    <small class="text-black-50">The Museum of Modern Art</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-cont mt-5">
+    <div class="container">
+        <div class="map mt-5 d-flex justify-content-between align-items-center ">
+            {% for map in maps%}
+            <div class="count text-center ">
+                <img src="{{map.image}}" />
+                <h5 class="colored-2 font-weight-bold">{{map.count}}</h5>
+                <p class="text-center"><small>{{map.subTitle}}</small></p>
+            </div>
+
+            {% endfor%}
+        </div>
+    </div>
+</div>
+
+ <div class="Subscrible mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="box-img ">
+                    <img src="../assets/images/subscribe/Сharacter.png" alt="" srcset="" class="" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+               <div class= "form-container d-flex justify-content-center align-items-center">
+                <div class="form">
+                    <div class="top-title">
+                        <h6>Subscrible now</h6>
+                        <h3 class="h1 mb-4">Get every single update you will get</h3>
+                    </div>
+                    <div class="form-content">
+                        <form action="" class="border d-flex justify-content-between align-items-center p-1">
+                           <div>
+                            <i class="fa fa-envelope ml-2" aria-hidden="true"></i>
+                            <input type="email" name="" id="" placeholder="Enter email address" class="border-0 ">
+                           </div>
+                            <button class="btn-sign my-2 my-sm-0   pt-2 pb-2 pr-4 pl-4 rounded-sm"
+                                type="submit">
+                                Subscrible now
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

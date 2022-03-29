@@ -1,0 +1,48 @@
+.section{
+	@media(min-width: 768px){
+		padding:60px 0;
+	}
+	padding:30px 0;
+}
+
+////////////////// bg
+.bg-white { background-color:#FFFFFF}
+.bg-lightGrey{background-color: $borderColor}
+.bg-primaryColor{background-color: $primaryColor}
+.bg-grey{background-color:$bg-gray}
+.colored{color:$primaryColor}
+.colored-2{color:$secondaryColor}
+
+
+///////// color
+.text-darkgray {color:$textColor}
+.text-primaryColor{color:$primaryColor}
+.text-grayColor{color:$grayColor}
+.text-white{color:white}
+
+
+//////////////// border
+.bb {border-bottom:1px solid $borderColor}
+.bt {border-top:1px solid $borderColor}
+.bl {border-left:1px solid $borderColor}
+.br {border-right:1px solid $borderColor}
+.ball {border-bottom:1px solid $borderColor}
+
+//////////////////// text
+.text-upper {text-transform:uppercase}
+.text-center{text-align: center}
+.capitalize {text-transform:capitalize}
+.text-regular {font-weight:500}
+.text-semibold {font-weight:600}
+.text-bold {font-weight:800}
+.text-lg {font-size:16px}
+.text-xlg {font-size:18px}
+.text-md {font-size:10px}
+.btn-sign{
+	background-color:$primaryColor;
+	border:none;
+	&:hover{
+		background-color:$secondaryColor;
+		color:#fff;
+	} 
+}

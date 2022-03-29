@@ -1,0 +1,45 @@
+header{
+    background-color: $sectionColor;
+  
+
+      img{
+          width: 50px;
+          height: 50px;
+      }
+      span{
+          font-size: 20px;
+          text-transform: uppercase;
+          color: $secondaryColor;
+      }
+      .navbar{
+          padding: 0;
+      }
+      .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+          color: $primaryColor;
+          font-weight: bold;
+      }
+      .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+    .btn-search{
+        background-color:#fff;
+        border:1px solid $borderColor;
+        &:hover{
+            background-color:$borderColor;
+            color:#fff;
+        } 
+        
+        
+    }
+    .btn-sign{
+        background-color:$primaryColor;
+        border:none;
+        &:hover{
+            background-color:$secondaryColor;
+            color:#fff;
+        } 
+    }
+}
